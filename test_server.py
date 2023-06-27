@@ -1,5 +1,4 @@
 import unittest
-import json
 from server import *
 
 payload = {
@@ -47,7 +46,7 @@ class FlaskAppTests(unittest.TestCase):
         self.__class__.curID = data["id"]
 
     def test_get_receipt_points(self):
-        response = self.app.get("/receipts/" + str(self.__class__.curID) + "/points")
+        response = self.app.get(f"/receipts/{self.__class__.curID}/points")
         data = json.loads(response.get_data(as_text=True))
         self.assertEqual(response.status_code, 200)
         self.assertIn("points", data)
