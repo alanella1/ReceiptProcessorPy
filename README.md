@@ -1,10 +1,10 @@
-# Flask Receipt API
+# Receipt API
 
 This is a Flask-based RESTful API for managing receipts. It provides endpoints for creating and retrieving receipts, as well as calculating reward points for each receipt.
 
 ## Getting Started
 
-To run the Flask Receipt API locally, follow the steps below.
+To run the Receipt API locally, follow the steps below.
 
 ### Prerequisites
 
